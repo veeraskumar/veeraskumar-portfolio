@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-fall-back: Arial, Helvetica, sans-serif;
+  --font-inter: var(--font-inter), var(--font-fall-back);
+  --font-fira-code: var(--font-fira-code), var(--font-fall-back);
+  --color-bg: #0a0a0a;
+  --color-surface: #111111;
+  --color-accent: #00df82;
+  --color-muted: #9ca3af;
+  --color-border: #1f1f1f;
+}
+
+body {
+  background: var(--color-bg);
+  font-family: var(--font-inter);
+  color: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent);
+}

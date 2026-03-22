@@ -39,7 +39,6 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "VeerasKumar K R" }],
   creator: "VeerasKumar K R",
-
   openGraph: {
     type: "website",
     url: BASE_URL,
@@ -73,6 +72,9 @@ export const metadata: Metadata = {
     icon: "/favicon.ico",
     shortcut: "/favicon-16x16.png",
     apple: "/apple-touch-icon.png",
+  },
+  verification: {
+    google: "uGmlUSKvChz7UBSExRcjKAMw0YMxhj6OMrBCeqL7EOc",
   },
 };
 

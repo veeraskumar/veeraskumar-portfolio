@@ -4,18 +4,51 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
 
-const projects = [
+type ProjectsType = {
+  name: string;
+  subtitle: string;
+  image: string;
+  status: string;
+  description: string;
+  tech: string[];
+  live: string;
+  repo?: string;
+  gradient: string;
+};
+
+const projects: ProjectsType[] = [
   {
-    name: "Blinkit Clone",
-    subtitle: "Full Stack E-Commerce App",
-    image: "/blinkit.png",
-    status: "In Progress",
+    name: "Movie Ticket Booking System",
+    subtitle: "Full Stack Movie Booking Platform",
+    image: "/mtbs.png",
+    status: "Completed",
     description:
-      "A full-stack clone of Blinkit.com with product browsing, cart functionality, and a complete admin panel. Built with FastAPI backend featuring JWT authentication and full CRUD operations. Frontend developed with Next.js and Tailwind CSS, with cart persisted via localStorage.",
-    tech: ["Next.js", "Tailwind CSS", "FastAPI", "JWT", "Python"],
-    live: "https://blinkit-com.vercel.app/",
-    repo: "https://github.com/veeraskumar/blinkit.com",
-    gradient: "from-accent/20 to-transparent",
+      "A full-stack movie ticket booking platform with JWT-based authentication and role-based access control for Users, Theater Owners, and Admins. Features theater and show management, online ticket booking, profile management, and email-based password reset. Built with a Spring Boot REST API and a responsive React frontend.",
+    tech: [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "shadcn/ui",
+      "Spring Boot",
+      "Spring Security",
+      "JWT",
+      "PostgreSQL",
+      "Hibernate",
+    ],
+    live: "https://mtbs-rvk.vercel.app/",
+    repo: "https://github.com/veeraskumar/movie-ticket-booking-system",
+    gradient: "from-primary/20 to-transparent",
+  },
+  {
+    name: "AKS Tours & Travels",
+    subtitle: "Business Website",
+    image: "/aks.png",
+    status: "Completed",
+    description:
+      "A responsive business website developed for a tours and travels client. Built with Next.js and Tailwind CSS, featuring tour packages, company information, and an admin dashboard powered by FastAPI with JWT authentication and CRUD functionality for managing website content.",
+    tech: ["Next.js", "React", "Tailwind CSS", "FastAPI", "JWT", "Python"],
+    live: "https://akstourstravels.vercel.app/",
+    gradient: "from-secondary/20 to-transparent",
   },
 ];
 
@@ -98,15 +131,17 @@ export default function Projects() {
                       <FiExternalLink size={14} />
                       Live Site
                     </a>
-                    <a
-                      href={project.repo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-sm px-4 py-2 rounded-lg border border-border text-white hover:border-accent hover:text-accent transition-all duration-200"
-                    >
-                      <FiGithub size={14} />
-                      GitHub
-                    </a>
+                    {project.repo && (
+                      <a
+                        href={project.repo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 text-sm px-4 py-2 rounded-lg border border-border text-white hover:border-accent hover:text-accent transition-all duration-200"
+                      >
+                        <FiGithub size={14} />
+                        GitHub
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>

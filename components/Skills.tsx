@@ -9,12 +9,14 @@ const skillGroups = [
     border: "border-accent/30",
     bg: "bg-accent/10",
     skills: [
-      "Python",
-      "FastAPI",
       "Java",
-      "Spring Boot*",
+      "Spring Boot",
+      "Spring Security",
+      "FastAPI",
       "REST APIs",
-      "JWT Auth",
+      "JWT Authentication",
+      "JPA / Hibernate",
+      "Python",
     ],
   },
   {
@@ -23,12 +25,14 @@ const skillGroups = [
     border: "border-purple-400/30",
     bg: "bg-purple-400/10",
     skills: [
-      "Next.js",
       "React.js",
+      "Next.js",
       "TypeScript",
       "Tailwind CSS",
+      "shadcn/ui",
       "Bootstrap",
-      "HTML5 / CSS3",
+      "HTML5",
+      "CSS3",
     ],
   },
   {
@@ -36,7 +40,7 @@ const skillGroups = [
     color: "text-yellow-400",
     border: "border-yellow-400/30",
     bg: "bg-yellow-400/10",
-    skills: ["MySQL", "JDBC", "Hibernate (ORM)"],
+    skills: ["PostgreSQL", "MySQL", "JDBC"],
   },
   {
     category: "Tools",
@@ -44,13 +48,6 @@ const skillGroups = [
     border: "border-blue-400/30",
     bg: "bg-blue-400/10",
     skills: ["Git", "GitHub", "Postman", "VS Code", "Eclipse IDE"],
-  },
-  {
-    category: "Currently Learning",
-    color: "text-orange-400",
-    border: "border-orange-400/30",
-    bg: "bg-orange-400/10",
-    skills: ["Docker", "Nginx"],
   },
 ];
 
@@ -107,13 +104,6 @@ export default function Skills() {
             </motion.div>
           ))}
         </div>
-
-        <motion.p
-          {...fadeUp(0.6)}
-          className="mt-8 text-xs text-muted text-center"
-        >
-          * Spring Boot — familiar level
-        </motion.p>
       </div>
     </section>
   );

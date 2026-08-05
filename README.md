@@ -54,7 +54,6 @@ veeraskumar-portfolio/
 │   ├── Contact.tsx
 │   └── Footer.tsx
 └── public/
-    └── VeerasKumar_CV.pdf   # Add your CV here
 ```
 
 ---

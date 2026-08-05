@@ -137,8 +137,9 @@ export default function Hero() {
               View Projects
             </Link>
             <Link
-              href="/VeerasKumar_CV.pdf"
+              href="https://docs.google.com/document/d/1Xp7WcsuYUHWTEKHnorgt6nCujuS1f3pa/export?format=pdf"
               target="_blank"
+              rel="noopener noreferrer"
               className="px-6 py-3 rounded-lg border border-border text-white text-sm hover:border-accent hover:text-accent transition-all duration-200 text-center"
             >
               Download CV
@@ -226,24 +227,37 @@ export default function Hero() {
                 <span className="text-green-400">stack</span>
                 <span className="text-white">: [</span>
               </p>
+
               <p className="pl-8">
                 <span className="text-yellow-300">&quot;Java&quot;</span>
                 <span className="text-white">,</span>{" "}
-                <span className="text-yellow-300">&quot;Python&quot;</span>
+                <span className="text-yellow-300">&quot;Spring Boot&quot;</span>
                 <span className="text-white">,</span>
               </p>
+
               <p className="pl-8">
+                <span className="text-yellow-300">&quot;React&quot;</span>
+                <span className="text-white">,</span>{" "}
                 <span className="text-yellow-300">&quot;Next.js&quot;</span>
+                <span className="text-white">,</span>
+              </p>
+
+              <p className="pl-8">
+                <span className="text-yellow-300">&quot;TypeScript&quot;</span>
                 <span className="text-white">,</span>{" "}
                 <span className="text-yellow-300">&quot;FastAPI&quot;</span>
                 <span className="text-white">,</span>
               </p>
+
               <p className="pl-8">
-                <span className="text-yellow-300">&quot;MySQL&quot;</span>
+                <span className="text-yellow-300">&quot;PostgreSQL&quot;</span>
                 <span className="text-white">,</span>{" "}
-                <span className="text-yellow-300">&quot;Tailwind&quot;</span>
+                <span className="text-yellow-300">
+                  &quot;Tailwind CSS&quot;
+                </span>
                 <span className="text-white">,</span>
               </p>
+
               <p className="pl-4">
                 <span className="text-white">],</span>
               </p>

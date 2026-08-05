@@ -5,7 +5,7 @@ import { motion, useInView } from "framer-motion";
 import { FiMapPin, FiBook, FiCode } from "react-icons/fi";
 
 const stats = [
-  { value: "1+", label: "Live Project" },
+  { value: "2+", label: "Live Project" },
   { value: "8+", label: "Technologies" },
   { value: "Self", label: "Taught Python & Next.js" },
 ];
@@ -90,10 +90,13 @@ export default function About() {
               {...fadeUp(0.4)}
               className="text-muted text-base leading-8 mb-10"
             >
-              I&apos;m currently building a Blinkit clone with a FastAPI
-              backend, JWT authentication, and a Next.js frontend — deployed
-              live on Vercel and Render. I&apos;m actively looking for a Full
-              Stack Developer role where I can contribute, learn, and grow.
+              I have built full-stack applications featuring JWT authentication,
+              RESTful APIs, and modern frontend technologies. Most recently, I
+              developed a movie ticket booking system using Spring Boot and
+              React, and I'm also working on a Aks Tours & Travels with a
+              FastAPI backend and a Next.js frontend. I deploy my projects using
+              platforms like Vercel and Railway to gain hands-on experience with
+              the complete development lifecycle.
             </motion.p>
 
             <motion.div {...fadeUp(0.5)} className="grid grid-cols-3 gap-4">

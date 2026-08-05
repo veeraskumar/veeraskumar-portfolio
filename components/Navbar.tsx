@@ -65,7 +65,8 @@ export default function Navbar() {
           className="hidden md:block"
         >
           <Link
-            href="/VeerasKumar_CV.pdf"
+            href="https://docs.google.com/document/d/1Xp7WcsuYUHWTEKHnorgt6nCujuS1f3pa/export?format=pdf"
+            rel="noopener noreferrer"
             target="_blank"
             className="text-sm px-4 py-2 rounded-lg border border-accent text-accent hover:bg-accent hover:text-black transition-all duration-200 font-medium"
           >
@@ -104,8 +105,9 @@ export default function Navbar() {
               </Link>
             ))}
             <Link
-              href="/VeerasKumar_CV.pdf"
+              href="https://docs.google.com/document/d/1Xp7WcsuYUHWTEKHnorgt6nCujuS1f3pa/export?format=pdf"
               target="_blank"
+              rel="noopener noreferrer"
               className="text-sm px-4 py-2 rounded-lg border border-accent text-accent text-center mt-2"
             >
               Download CV
